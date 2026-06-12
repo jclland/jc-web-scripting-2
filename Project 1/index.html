@@ -9,6 +9,118 @@
 </head>
 
 <body>
+ 
+    <header>
+        <h1>Student Assignment Dashboard</h1>
+        <p>Track your assignments in a canvas inspired dashboard and stay on top of due dates.</p>
+    </header>
+ 
+    <main class="dashboard-container">
+ 
+        <aside class="sidebar">
+ 
+            <section class="card">
+                <h2>Add Assignment</h2>
+                <form id="assignment-form">
+                    <div class="form-group">
+                        <label for="task-title">Assignment Name:</label>
+                        <input type="text" id="task-title" placeholder="Project 1, Read Chapter 4, etc.">
+                    </div>
+ 
+                    <div class="form-group">
+                        <label for="task-class">Class:</label>
+                        <input type="text" id="task-class" placeholder="English, Math, Python, etc.">
+                    </div>
+ 
+                    <div class="form-group">
+                        <label for="task-date">Due Date (Optional):</label>
+                        <input type="date" id="task-date">
+                    </div>
+ 
+                    <div class="form-group">
+                        <label for="task-color">Label Color:</label>
+                        <select id="task-color">
+                            <option value="#e74c3c">Red</option>
+                            <option value="#3498db">Blue</option>
+                            <option value="#2ecc71">Green</option>
+                            <option value="#f1c40f">Yellow</option>
+                            <option value="#e67e22">Orange</option>
+                            <option value="#e91e63">Pink</option>
+                            <option value="#a83281">Magenta</option>
+                            <option value="#9b59b6">Purple</option>
 
+                            <option value="#666565">Grey</option>
+
+                        </select>
+                    </div>
+ 
+                    <button type="submit">Add Assignment</button>
+                </form>
+                <p id="error-message" class="error"></p>
+            </section>
+ 
+            <section class="card">
+                <h2>Filter</h2>
+                <div class="form-group">
+                    <label for="filter-status">Status:</label>
+                    <select id="filter-status">
+                        <option value="all">All</option>
+                        <option value="not-done">Not Done</option>
+                        <option value="completed">Completed</option>
+                        <option value="overdue">Overdue</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filter-class">Class:</label>
+                    <select id="filter-class">
+                        <option value="all">All Classes</option>
+                    </select>
+                </div>
+            </section>
+ 
+        </aside>
+ 
+        <div class="main-content">
+ 
+            <section class="card">
+                <h2>Assignment Status</h2>
+                <div class="stats-grid">
+                    <div class="stat-box completed-box">
+                        <span class="stat-number" id="stat-completed">0</span>
+                        <span class="stat-label">Completed</span>
+                    </div>
+                    <div class="stat-box not-done-box">
+                        <span class="stat-number" id="stat-not-done">0</span>
+                        <span class="stat-label">Not Done</span>
+                    </div>
+                    <div class="stat-box overdue-box">
+                        <span class="stat-number" id="stat-overdue">0</span>
+                        <span class="stat-label">Overdue</span>
+                    </div>
+                </div>
+            </section>
+ 
+            <section class="card display-card">
+                <div class="calendar-header-controls">
+                    <div class="view-toggles">
+                        <button id="view-week-btn" class="toggle-btn active">Week</button>
+                        <button id="view-month-btn" class="toggle-btn">Month</button>
+                        <button id="view-agenda-btn" class="toggle-btn">Agenda</button>
+                    </div>
+ 
+                    <div class="nav-controls" id="nav-controls-box">
+                        <button id="prev-btn" class="nav-arrow">Prev</button>
+                        <span id="calendar-title-label" class="calendar-label-text">Current Week</span>
+                        <button id="next-btn" class="nav-arrow">Next</button>
+                    </div>
+                </div>
+ 
+                <div id="calendar-view-window">
+                </div>
+            </section>
+ 
+        </div>
+ 
+    </main>
 </body>
 </html>
