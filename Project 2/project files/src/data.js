@@ -39,29 +39,24 @@ export const projects = [
         status: "Done"
     },
     {
-        title: "Project 3",
-        description: "N/A",
-        status: "Not started"
+        title: "Project 3: Component-Based React App",
+        description: "This project focuses on React components, JSX, props, and reusable page structure.",
+        status: "Done"
     },
     {
-        title: "Project 4",
-        description: "N/A",
-        status: "Not started"
+        title: "Project 4: Interactive React Dashboard",
+        description: "This project builds on my previous React work. Project 3, focused on components, JSX, and props. Project 4, adds interactivity using state, events, and conditional rendering.",
+        status: "Done"
     },
     {
-        title: "Project 5",
-        description: "N/A",
-        status: "Not started"
+        title: "Project 5: AI Chatbot Interface App",
+        description: "This project focuses on controlled forms, validation, state arrays, form submission, and chat interface design.",
+        status: "Done"
     },
         {
-        title: "Project 6",
-        description: "N/A",
-        status: "Not started"
-    },
-        {
-        title: "Project 7",
-        description: "N/A",
-        status: "Not started"
+        title: "Project 6: Webscripting II Final",
+        description: "API driven React app that demonstrates the major skills from Web Scripting II.",
+        status: "Done"
     }
     
 ];
